@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import SwiftData
 
 @main
 struct GrouperApp: App {
@@ -13,5 +14,6 @@ struct GrouperApp: App {
         WindowGroup {
             ContentView()
         }
+        .modelContainer(for: [Organization.self, Member.self, Guardian.self, Message.self])
     }
 }

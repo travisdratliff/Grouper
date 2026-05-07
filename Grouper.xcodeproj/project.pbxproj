@@ -6,8 +6,13 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		715E772B2FA9563C00329746 /* GrouperApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715E772A2FA9563C00329746 /* GrouperApp.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		715E77272FA9563C00329746 /* Grouper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Grouper.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		715E772A2FA9563C00329746 /* GrouperApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrouperApp.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -32,6 +37,7 @@
 		715E771E2FA9563C00329746 = {
 			isa = PBXGroup;
 			children = (
+				715E772A2FA9563C00329746 /* GrouperApp.swift */,
 				715E77292FA9563C00329746 /* Grouper */,
 				715E77282FA9563C00329746 /* Products */,
 			);
@@ -119,6 +125,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				715E772B2FA9563C00329746 /* GrouperApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
