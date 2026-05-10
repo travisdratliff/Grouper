@@ -38,8 +38,10 @@ struct OrgDetailView: View {
         .navigationTitle(organization.title)
         .toolbar {
             ToolbarItemGroup(placement: .topBarTrailing) {
-                Button {
-                    activeSheet = .newMember
+                Menu {
+                    Button("Join Mode") { activeSheet = .newMember }
+                    Button("QR Code") { }
+                    Button("Join Link") { }
                 } label: {
                     Image(systemName: "plus.circle.fill")
                         .foregroundStyle(.red)

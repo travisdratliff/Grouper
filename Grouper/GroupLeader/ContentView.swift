@@ -7,9 +7,15 @@
 
 import SwiftUI
 import SwiftData
+import FirebaseAuth
+import FirebaseFirestore
 
 struct ContentView: View {
     @Query var organizations: [Organization]
+    var uid: String { Auth.auth().currentUser?.uid ?? "" }
+    var myOrganizations: [Organization] {
+        organizations.filter { $0.coachId == uid }
+    }
     @State var path = NavigationPath()
     @State var showNewOrg = false
     @Namespace var namespace

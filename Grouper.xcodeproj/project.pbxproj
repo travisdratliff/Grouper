@@ -8,15 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		715E772B2FA9563C00329746 /* GrouperApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715E772A2FA9563C00329746 /* GrouperApp.swift */; };
+		71D0C3402FAD017F005CC0F3 /* SplashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D0C33F2FAD017F005CC0F3 /* SplashScreen.swift */; };
+		71D0C3422FAD0719005CC0F3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 71D0C3412FAD0719005CC0F3 /* GoogleService-Info.plist */; };
+		71D0C3452FAD07D9005CC0F3 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 71D0C3442FAD07D9005CC0F3 /* FirebaseAuth */; };
+		71D0C3472FAD07D9005CC0F3 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 71D0C3462FAD07D9005CC0F3 /* FirebaseFirestore */; };
+		71D0C3492FAD07D9005CC0F3 /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = 71D0C3482FAD07D9005CC0F3 /* FirebaseMessaging */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		715E77272FA9563C00329746 /* Grouper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Grouper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		715E772A2FA9563C00329746 /* GrouperApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrouperApp.swift; sourceTree = "<group>"; };
+		71D0C33F2FAD017F005CC0F3 /* SplashScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreen.swift; sourceTree = "<group>"; };
+		71D0C3412FAD0719005CC0F3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		715E77292FA9563C00329746 /* Grouper */ = {
+		71D0C39E2FAEDAB8005CC0F3 /* Grouper */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = Grouper;
 			sourceTree = "<group>";
@@ -28,6 +35,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				71D0C3492FAD07D9005CC0F3 /* FirebaseMessaging in Frameworks */,
+				71D0C3452FAD07D9005CC0F3 /* FirebaseAuth in Frameworks */,
+				71D0C3472FAD07D9005CC0F3 /* FirebaseFirestore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -37,8 +47,10 @@
 		715E771E2FA9563C00329746 = {
 			isa = PBXGroup;
 			children = (
+				71D0C3412FAD0719005CC0F3 /* GoogleService-Info.plist */,
 				715E772A2FA9563C00329746 /* GrouperApp.swift */,
-				715E77292FA9563C00329746 /* Grouper */,
+				71D0C33F2FAD017F005CC0F3 /* SplashScreen.swift */,
+				71D0C39E2FAEDAB8005CC0F3 /* Grouper */,
 				715E77282FA9563C00329746 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -67,10 +79,13 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				715E77292FA9563C00329746 /* Grouper */,
+				71D0C39E2FAEDAB8005CC0F3 /* Grouper */,
 			);
 			name = Grouper;
 			packageProductDependencies = (
+				71D0C3442FAD07D9005CC0F3 /* FirebaseAuth */,
+				71D0C3462FAD07D9005CC0F3 /* FirebaseFirestore */,
+				71D0C3482FAD07D9005CC0F3 /* FirebaseMessaging */,
 			);
 			productName = Grouper;
 			productReference = 715E77272FA9563C00329746 /* Grouper.app */;
@@ -100,6 +115,9 @@
 			);
 			mainGroup = 715E771E2FA9563C00329746;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				71D0C3432FAD07D9005CC0F3 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 715E77282FA9563C00329746 /* Products */;
 			projectDirPath = "";
@@ -115,6 +133,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				71D0C3422FAD0719005CC0F3 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -125,6 +144,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				71D0C3402FAD017F005CC0F3 /* SplashScreen.swift in Sources */,
 				715E772B2FA9563C00329746 /* GrouperApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -339,6 +359,35 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		71D0C3432FAD07D9005CC0F3 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 12.13.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		71D0C3442FAD07D9005CC0F3 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 71D0C3432FAD07D9005CC0F3 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		71D0C3462FAD07D9005CC0F3 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 71D0C3432FAD07D9005CC0F3 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		71D0C3482FAD07D9005CC0F3 /* FirebaseMessaging */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 71D0C3432FAD07D9005CC0F3 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseMessaging;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 715E771F2FA9563C00329746 /* Project object */;
 }

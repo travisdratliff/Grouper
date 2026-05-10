@@ -14,6 +14,9 @@ class Organization {
     var title = ""
     var collectIds = false
     var subGroups = [String]()
+    var firestoreId = ""
+    var joinCode = ""
+    var coachId = ""
     @Relationship(deleteRule: .cascade) var members = [Member]()
     init() { }
 }
